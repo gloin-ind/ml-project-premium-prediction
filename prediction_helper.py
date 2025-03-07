@@ -6,9 +6,9 @@ import os
 
 model_young = load(os.path.join(os.path.dirname(__file__), "artifacts", "model_young.joblib"))
 
-model_rest = load("artifacts\model_rest.joblib")
-scaler_young = load("artifacts\scaler_young.joblib")
-scaler_rest = load("artifacts\scaler_rest.joblib")
+model_rest = load(os.path.join(os.path.dirname(__file__), "artifacts", "model_rest.joblib"))
+scaler_young = load(os.path.join(os.path.dirname(__file__), "artifacts", "scaler_young.joblib"))
+scaler_rest = load(os.path.join(os.path.dirname(__file__), "artifacts", "scaler_rest.joblib"))
 
 def calculate_normalized_risk(medical_history):
     risk_scores = {
