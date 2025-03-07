@@ -2,6 +2,9 @@
 
 import pandas as pd
 from joblib import load
+import os
+
+model_young = load(os.path.join(os.path.dirname(__file__), "artifacts", "model_young.joblib"))
 
 model_young = load("artifacts\model_young.joblib")
 model_rest = load("artifacts\model_rest.joblib")
